@@ -3,8 +3,6 @@ package com.android.ui.learing;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -30,7 +28,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
-import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
@@ -231,12 +228,6 @@ public class AsyncLoadImage extends Activity implements GridView.MultiChoiceMode
 	        executorService.execute(pbg);
 		}
 		
-		/**
-		 * 获取文件缩略图：
-		 * 	1: 查询数据库，如果找到则返回
-		 *  2: 直接获取本地文件，如果找到则返回 
-		 *  3: 证明本地文件不存在？？？？
-		 * */
 		class PhotoBitmapGenerater implements Runnable{
 			private static final int BITMAP_WAS_FINDED = 31;
 			private static final int BITMAP_WAS_NOT_FINDED = BITMAP_WAS_FINDED + 1;
@@ -282,15 +273,11 @@ public class AsyncLoadImage extends Activity implements GridView.MultiChoiceMode
 				sendBitmap(BITMAP_WAS_NOT_FINDED ,null);
 			}
 			
-			/**
-			 * 从数据库检索缩略图
-			 * */
 			private Bitmap getBitmapFromDB(){
 			    BitmapFactory.Options options = new BitmapFactory.Options();
 	            options.inDither = false;
 	            options.inScaled = true;
 	            options.inPreferredConfig = Bitmap.Config.ARGB_8888;
-	            options.inSampleSize = 2;
 	            Bitmap mThumbnail = MediaStore.Images.Thumbnails.getThumbnail(
 	            		mContext.getContentResolver(), psi.file_id, Thumbnails.MICRO_KIND, options);
 	            return mThumbnail;
