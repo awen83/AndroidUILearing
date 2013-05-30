@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LilongUILearing</string>
+	<string name="select_all">"全选"</string>
+    <plurals name="number_of_items_selected">
+        <item msgid="2142579311530586258" quantity="zero">"选中了 %1$d 项"</item>
+        <item msgid="2478365152745637768" quantity="one">"选中了 %1$d 项"</item>
+        <item msgid="754722656147810487" quantity="other">"选中了 %1$d 项"</item>
+    </plurals>
+</resources>

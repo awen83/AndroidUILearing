@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="TextColor_List">#ff1d69b3</color>
+    <color name="setting_title_color">#ff111111</color>
+    <color name="setting_border">#ffaeaeae</color>
+    <color name="item_border">#ff9e9e9e</color>
+    <color name="setting_unsel">#ffeeeeee</color>
+    <color name="setting_sel">#ff52abfa</color>
+    <color name="setting_press">#ff318cde</color>
+    <color name="item_default_color">#ff666666</color>
+    <color name="setting_bg">#ffdff5ff</color>
+    <color name="color_dialog_body">#ff000000</color>
+    <color name="color_background">#fff2f2f2</color>
+    <color name="color_title">#ffffffff</color>
+    <color name="notice_color">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="livespace_green">#42be16</color>
+    <color name="background_white">#eeeeee</color>
+    <color name="background_blue">#ff70a8f0</color>
+    <color name="hint_color">#ffa8b6d5</color>
+    <color name="hint_color_1">#ffa8a8a8</color>
+    <color name="white_color">#ffffffff</color>
+    <color name="background_gray">#ff989898</color>
+    <color name="background_bule_txt">#ff2aa8d4</color>
+    <color name="background_main">#ffefefef</color>
+    <color name="list_divider">#ffd6d6d6</color>
+    <color name="light_blue">#ffbdd1e9</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="grey">#ffcccccc</color>
+    <color name="gray">#ffa6a6a0</color>
+    <color name="tab_color">#ff0082c7</color>
+    <color name="passcodeBackgroundOverride">#ff454545</color>
+    <color name="gd_action_bar_tint">#ffa8c24e</color>
+    <color name="gd_action_bar_divider_tint">#77ffffff</color>
+    <color name="action_bar_bg">#42be16</color>
+</resources>
